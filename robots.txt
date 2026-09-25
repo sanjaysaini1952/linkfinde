@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Nothing here is private or paid, so there is nothing to disallow.
+#
+# No Sitemap line yet: the site uses hash routing, so there are no distinct
+# crawlable URLs to list. This is added when routing moves to real paths.

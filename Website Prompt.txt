@@ -1,0 +1,1350 @@
+# MASTER PROMPT — BUILD A PREMIUM WEBSITE DIRECTORY PLATFORM
+
+You are a senior UI/UX designer, product designer, and full-stack Next.js engineer.
+
+Build a complete, production-ready website directory platform inspired by the concept of curated internet directories such as FMHY, but DO NOT copy its design, branding, layout, text, or visual identity.
+
+The platform's purpose is simple:
+
+> Create one trusted place where users can discover useful websites and easily access their actual/official website links.
+
+The website should feel like a premium combination of:
+
+* Internet directory
+* Search engine
+* Resource library
+* Website discovery platform
+* Curated knowledge base
+
+The design must be modern, futuristic, clean, highly usable, fast, responsive, and visually impressive.
+
+---
+
+# 1. CORE PRODUCT IDEA
+
+Users should be able to:
+
+1. Search for websites.
+2. Browse websites by category.
+3. Browse websites by tags.
+4. Open a website's official link.
+5. Copy a website URL.
+6. Discover trending websites.
+7. Discover recently added websites.
+8. See whether a website is verified.
+9. Submit a website.
+10. Report a broken or incorrect link.
+11. Bookmark/favorite websites.
+12. Share website pages.
+13. Filter results.
+14. Sort results.
+15. Explore curated collections.
+
+The platform administrator should be able to:
+
+* Add websites
+* Edit websites
+* Delete websites
+* Verify websites
+* Feature websites
+* Manage categories
+* Manage tags
+* Review submissions
+* Manage reports
+* Monitor broken links
+* View analytics
+* Manage users
+
+---
+
+# 2. TECH STACK
+
+Use:
+
+* Next.js 16
+* React 19
+* TypeScript
+* App Router
+* Tailwind CSS v4
+* Framer Motion
+* Lucide React
+* Prisma ORM
+* PostgreSQL
+* Auth.js / NextAuth
+* Zod
+* React Hook Form
+
+Architecture must be scalable and production-ready.
+
+Use reusable components instead of duplicating UI.
+
+Use Server Components wherever appropriate.
+
+Use Client Components only when interactivity is required.
+
+---
+
+# 3. DESIGN LANGUAGE
+
+Create a completely original visual identity.
+
+Design direction:
+
+"Futuristic Internet Atlas"
+
+The interface should feel like a premium digital operating system for the web.
+
+Visual characteristics:
+
+* Deep dark background
+* Subtle gradients
+* Soft glass surfaces
+* Thin borders
+* Large modern typography
+* Excellent spacing
+* Minimal visual noise
+* Subtle glow effects
+* Elegant hover animations
+* Smooth page transitions
+* Beautiful cards
+* Professional iconography
+
+Do NOT overuse glassmorphism.
+
+Do NOT make everything glow.
+
+Do NOT use excessive animations.
+
+The website must remain professional and readable.
+
+---
+
+# 4. COLOR SYSTEM
+
+Primary:
+
+Near-black:
+#07090D
+
+Secondary:
+#0D1117
+
+Surface:
+#11161D
+
+Elevated surface:
+#151B23
+
+Border:
+rgba(255,255,255,0.08)
+
+Primary accent:
+Electric blue / cyan gradient
+
+Secondary accent:
+Purple
+
+Success:
+Green
+
+Warning:
+Amber
+
+Error:
+Red
+
+Text:
+
+Primary:
+#F5F7FA
+
+Secondary:
+#A7B0BE
+
+Muted:
+#697386
+
+Create CSS variables for the entire color system.
+
+Allow future light-mode support.
+
+---
+
+# 5. TYPOGRAPHY
+
+Use a premium modern font such as:
+
+Inter
+or
+Geist
+
+Typography hierarchy:
+
+Huge hero heading:
+56–80px desktop
+
+Section headings:
+32–44px
+
+Card headings:
+18–22px
+
+Body:
+14–16px
+
+Small metadata:
+12–14px
+
+Make typography responsive.
+
+---
+
+# 6. GLOBAL NAVBAR
+
+Create a premium responsive navbar.
+
+Desktop:
+
+LEFT:
+Logo + platform name
+
+CENTER:
+Search
+
+RIGHT:
+
+Explore
+Categories
+Trending
+Submit
+Bookmarks
+Theme
+User
+
+Example:
+
+[ LOGO ] WebAtlas
+
+Explore
+Categories
+Trending
+
+[ Search websites... ]
+
+Submit
+♡
+Profile
+
+Navbar should:
+
+* Become sticky on scroll
+* Have subtle backdrop blur
+* Have border-bottom
+* Animate when appearing
+* Work perfectly on mobile
+
+Mobile:
+
+Logo
+Search icon
+Menu button
+
+---
+
+# 7. HOMEPAGE
+
+Create an exceptional homepage.
+
+Hero section:
+
+Small badge:
+
+"THE INTERNET, ORGANIZED."
+
+Main heading:
+
+"Discover the best places on the web."
+
+Supporting text:
+
+"Explore a carefully organized directory of useful websites, tools, resources, and platforms."
+
+Large search bar:
+
+"Search websites, tools, resources..."
+
+Search should include:
+
+* Search icon
+* Keyboard shortcut indicator
+* Clear button
+* Animated focus state
+* Search suggestions
+
+Example:
+
+⌘ K
+
+Below search:
+
+Popular searches:
+
+AI Tools
+Cybersecurity
+Developer Tools
+Design
+Education
+Productivity
+
+---
+
+# 8. HERO VISUAL
+
+Create a subtle interactive visual background.
+
+Possible concept:
+
+A floating network of nodes representing websites.
+
+OR:
+
+Abstract digital world map.
+
+OR:
+
+Animated constellation of connected websites.
+
+Use CSS / Framer Motion / Three.js only if performance remains good.
+
+Do NOT make the hero visually distracting.
+
+---
+
+# 9. CATEGORY SECTION
+
+Display beautiful category cards.
+
+Categories:
+
+AI & Machine Learning
+Cybersecurity
+Developer Tools
+Design
+Education
+Productivity
+Business
+Finance
+Cloud & Hosting
+Software
+Media
+Gaming
+OSINT & Research
+Science
+Career & Jobs
+Marketing
+Social Media
+Web Tools
+
+Each card should contain:
+
+Icon
+Category name
+Short description
+Website count
+Arrow
+
+Hover:
+
+* Border animation
+* Slight elevation
+* Icon animation
+* Gradient glow
+
+---
+
+# 10. FEATURED WEBSITES
+
+Create a premium section:
+
+"Featured websites"
+
+Cards should show:
+
+Logo
+Website name
+Verified badge
+Short description
+Category
+Tags
+Pricing indicator
+Visit button
+Bookmark button
+
+Example:
+
+┌─────────────────────────────┐
+│ Logo       ✓ Verified       │
+│                             │
+│ Website Name                │
+│ Short description...        │
+│                             │
+│ AI • Productivity • Free    │
+│                             │
+│ [ Visit Website ↗ ]    ♡   │
+└─────────────────────────────┘
+
+---
+
+# 11. TRENDING SECTION
+
+Create:
+
+"Trending this week"
+
+Display:
+
+#01
+#02
+#03
+
+Each item should include:
+
+Logo
+Website
+Description
+Clicks
+Category
+Trend indicator
+
+Do not use fake statistics in production.
+
+Use realistic placeholder data only during development.
+
+---
+
+# 12. RECENTLY ADDED
+
+Create a timeline/list:
+
+Recently added
+
+Each row:
+
+Website logo
+Name
+Description
+Category
+Added date
+Verified status
+Visit button
+
+---
+
+# 13. DIRECTORY PAGE
+
+Route:
+
+/directory
+
+Create the main searchable directory.
+
+Layout:
+
+LEFT SIDEBAR:
+
+Categories
+Tags
+Pricing
+Platform
+Verification
+Open Source
+Featured
+
+RIGHT:
+
+Search
+
+Sort:
+
+Popular
+Newest
+A-Z
+Recently Updated
+
+Grid/list toggle.
+
+Website cards.
+
+Pagination or infinite loading.
+
+URL:
+
+/directory?page=2
+
+---
+
+# 14. SEARCH EXPERIENCE
+
+Create a powerful search experience.
+
+Route:
+
+/search?q=...
+
+Search should search:
+
+Website name
+Description
+Tags
+Category
+
+Search UI should include:
+
+* Instant suggestions
+* Recent searches
+* Popular searches
+* Keyboard navigation
+* Highlight matching text
+* Empty state
+* No-results suggestions
+
+Keyboard shortcut:
+
+CMD/CTRL + K
+
+Create a command palette.
+
+---
+
+# 15. WEBSITE DETAIL PAGE
+
+Route:
+
+/website/[slug]
+
+Example structure:
+
+Logo
+
+Website Name
+✓ Verified
+
+Short description
+
+[ Visit Official Website ↗ ]
+
+[ Copy Link ]
+
+[ Bookmark ]
+
+Category
+Tags
+Pricing
+Platform
+
+ABOUT
+
+Detailed description.
+
+FEATURES
+
+Feature list.
+
+LINK INFORMATION
+
+Official URL
+Domain
+Verification status
+Last checked
+
+RELATED WEBSITES
+
+Show similar websites.
+
+REPORT LINK
+
+"Report incorrect information"
+
+SHARE
+
+Copy link
+Twitter/X
+LinkedIn
+Reddit
+
+Important:
+
+Clearly identify the actual destination URL.
+
+Use rel="noopener noreferrer" and appropriate external-link handling.
+
+---
+
+# 16. VERIFICATION SYSTEM
+
+Create a clear trust system.
+
+Badges:
+
+✓ Verified
+
+Recently Checked
+
+Community Submitted
+
+Unverified
+
+The verification badge must NOT imply endorsement.
+
+It should mean:
+
+"The directory has checked that this URL points to the claimed website."
+
+Add:
+
+"Last checked: 2 days ago"
+
+---
+
+# 17. SUBMIT WEBSITE PAGE
+
+Route:
+
+/submit
+
+Create a beautiful submission form.
+
+Fields:
+
+Website name
+Official URL
+Description
+Category
+Tags
+Logo URL
+Pricing model
+Submitter name
+Submitter email
+
+Checkbox:
+
+"I confirm that this information is accurate."
+
+Submit button.
+
+Show:
+
+"Submissions are reviewed before appearing in the directory."
+
+Add success state.
+
+---
+
+# 18. REPORT PAGE / MODAL
+
+Users should be able to report:
+
+Broken link
+Wrong website
+Fake/misleading information
+Duplicate
+Inappropriate content
+Other
+
+Do not automatically delete websites.
+
+Send reports to admin review.
+
+---
+
+# 19. BOOKMARKS
+
+Authenticated users can bookmark websites.
+
+Route:
+
+/bookmarks
+
+Display:
+
+Saved websites
+Recently bookmarked
+Collections
+
+Allow users to create collections:
+
+"My AI Tools"
+"Developer Tools"
+"Research"
+"Career"
+
+---
+
+# 20. USER ACCOUNT
+
+Create:
+
+/login
+/register
+/forgot-password
+/profile
+/settings
+
+Profile:
+
+Avatar
+Name
+Email
+Bookmarks
+Submissions
+
+Settings:
+
+Account
+Security
+Notifications
+Appearance
+
+---
+
+# 21. ADMIN DASHBOARD
+
+Create a complete admin panel.
+
+Route:
+
+/admin
+
+Dashboard:
+
+Total websites
+Verified websites
+Pending submissions
+Reports
+Broken links
+Users
+Clicks
+
+Charts:
+
+Website growth
+Daily clicks
+Popular categories
+Top websites
+
+---
+
+# 22. ADMIN WEBSITE MANAGEMENT
+
+Route:
+
+/admin/websites
+
+Table:
+
+Logo
+Name
+URL
+Category
+Status
+Verification
+Clicks
+Created
+Actions
+
+Actions:
+
+Edit
+Verify
+Feature
+Disable
+Delete
+
+Add website button.
+
+---
+
+# 23. ADMIN SUBMISSIONS
+
+Route:
+
+/admin/submissions
+
+Tabs:
+
+Pending
+Approved
+Rejected
+
+Each submission:
+
+Website
+Submitter
+URL
+Category
+Date
+
+Actions:
+
+Approve
+Reject
+Edit
+
+---
+
+# 24. LINK HEALTH CHECKER
+
+Create:
+
+/admin/link-checker
+
+The system should be able to periodically check URLs.
+
+Statuses:
+
+200 OK
+301 Redirect
+403 Forbidden
+404 Not Found
+5xx Error
+Timeout
+
+Store:
+
+HTTP status
+Response time
+Last checked
+Last successful check
+
+Do not aggressively scan websites.
+
+Only check submitted directory URLs.
+
+---
+
+# 25. DATABASE
+
+Create Prisma models for:
+
+User
+Website
+Category
+Tag
+WebsiteTag
+Bookmark
+Collection
+Submission
+Report
+Click
+VerificationCheck
+
+Include:
+
+createdAt
+updatedAt
+
+Use proper relations.
+
+Add indexes for:
+
+slug
+url
+categoryId
+createdAt
+name
+
+Use unique constraints where appropriate.
+
+---
+
+# 26. SEO
+
+Every page must be SEO optimized.
+
+Create:
+
+Dynamic metadata
+Open Graph
+Twitter cards
+Canonical URLs
+Sitemap
+Robots.txt
+Structured data
+
+Website pages should use:
+
+SoftwareApplication / WebSite / Organization schema where appropriate.
+
+Generate dynamic metadata for every website.
+
+Example:
+
+Title:
+
+"Website Name — WebAtlas"
+
+Description:
+
+"Discover Website Name and visit its official website."
+
+---
+
+# 27. PERFORMANCE
+
+Performance is extremely important.
+
+Use:
+
+Next.js Image
+Lazy loading
+Dynamic imports
+Code splitting
+Server Components
+Streaming where useful
+Optimistic UI
+Skeleton loaders
+
+Avoid:
+
+Huge JavaScript bundles
+Unnecessary client components
+Heavy animations
+Autoplay video
+Huge images
+
+Target:
+
+Lighthouse 90+.
+
+---
+
+# 28. ACCESSIBILITY
+
+Follow WCAG principles.
+
+Requirements:
+
+Keyboard navigation
+Visible focus states
+ARIA labels
+Semantic HTML
+Good contrast
+Screen-reader friendly
+Accessible forms
+Accessible modals
+Reduced-motion support
+
+---
+
+# 29. RESPONSIVE DESIGN
+
+Design every page for:
+
+Mobile:
+320px+
+
+Tablet:
+768px+
+
+Desktop:
+1024px+
+
+Large desktop:
+1440px+
+
+The mobile experience must NOT simply be a compressed desktop layout.
+
+Create a dedicated mobile navigation.
+
+---
+
+# 30. ANIMATION SYSTEM
+
+Use Framer Motion.
+
+Animations should be subtle.
+
+Examples:
+
+Fade-in
+Slide-up
+Scale
+Card hover
+Search transitions
+Modal transitions
+Page transitions
+
+Duration:
+
+150–400ms
+
+Use spring animations sparingly.
+
+Respect:
+
+prefers-reduced-motion
+
+---
+
+# 31. COMPONENT ARCHITECTURE
+
+Create reusable components:
+
+Navbar
+Footer
+SearchBar
+CommandPalette
+CategoryCard
+WebsiteCard
+FeaturedCard
+TrendingList
+WebsiteLogo
+VerifiedBadge
+Tag
+BookmarkButton
+VisitButton
+FilterSidebar
+SortDropdown
+Pagination
+Modal
+Toast
+EmptyState
+Skeleton
+Breadcrumb
+ShareButton
+ReportModal
+
+Keep components modular.
+
+---
+
+# 32. FOOTER
+
+Create a professional footer.
+
+Sections:
+
+Platform
+Explore
+Categories
+Resources
+Company
+Legal
+
+Include:
+
+About
+Submit Website
+Contact
+Privacy
+Terms
+
+Bottom:
+
+© 2026 WebAtlas. All rights reserved.
+
+Add a small statement:
+
+"Curated links. Independent directory."
+
+---
+
+# 33. SAMPLE DATA
+
+Create at least 40 realistic placeholder directory entries across categories.
+
+IMPORTANT:
+
+Clearly mark development/sample data.
+
+Do not fabricate verification claims.
+
+Do not claim websites are verified unless they have actually been checked.
+
+---
+
+# 34. SECURITY
+
+Implement:
+
+Input validation
+Zod schemas
+CSRF protection where appropriate
+Rate limiting
+Authentication checks
+Authorization
+Admin role protection
+Secure cookies
+SQL injection protection through Prisma
+XSS-safe rendering
+
+External URLs must be validated.
+
+Do not allow dangerous protocols such as:
+
+javascript:
+data:
+file:
+
+Only allow appropriate HTTP/HTTPS URLs.
+
+---
+
+# 35. ANTI-SPAM
+
+Submission system should include:
+
+Rate limiting
+Duplicate URL detection
+Email validation
+Basic abuse protection
+Admin approval
+
+Do not immediately publish user submissions.
+
+---
+
+# 36. DARK / LIGHT MODE
+
+Default:
+
+Dark mode.
+
+Provide a theme switcher.
+
+Light mode should be carefully designed rather than simply inverting colors.
+
+---
+
+# 37. EMPTY STATES
+
+Every empty state must look intentional.
+
+Examples:
+
+"No websites found"
+
+"Try another search term."
+
+"Your bookmarks are empty."
+
+"Start building your personal web collection."
+
+Use appropriate icons and actions.
+
+---
+
+# 38. ERROR STATES
+
+Create:
+
+404 page
+500 page
+Network error
+Broken website state
+Failed search
+Failed submission
+
+Make them visually consistent.
+
+---
+
+# 39. MICROCOPY
+
+Use concise, human language.
+
+Avoid generic AI-sounding copy.
+
+Examples:
+
+"Find your next favorite website."
+
+"Explore the web, organized."
+
+"One directory. Thousands of useful links."
+
+"Looking for something specific?"
+
+---
+
+# 40. ORIGINALITY
+
+DO NOT clone FMHY.
+
+Do not copy:
+
+Their logo
+Their exact layout
+Their typography
+Their colors
+Their text
+Their branding
+Their category structure exactly
+
+Use the concept only as inspiration for a curated web directory.
+
+Create a unique product identity.
+
+---
+
+# 41. BRANDING
+
+Use a temporary brand:
+
+WEBATLAS
+
+Tagline:
+
+"Explore the web, organized."
+
+Create a simple logo using:
+
+Globe + node/network concept.
+
+Logo should work in:
+
+Navbar
+Favicon
+Mobile
+Social preview
+
+Make branding easy to replace later.
+
+---
+
+# 42. FINAL USER EXPERIENCE
+
+The final website should feel like:
+
+"Google meets a premium resource library."
+
+A user should be able to:
+
+Open homepage
+↓
+Search "AI image generator"
+↓
+See relevant websites
+↓
+Filter by category
+↓
+Open website detail
+↓
+Click "Visit Official Website"
+↓
+Reach the actual website
+
+with as few steps as possible.
+
+---
+
+# 43. DEVELOPMENT REQUIREMENTS
+
+Before writing code:
+
+1. Plan the complete architecture.
+2. Define routes.
+3. Define database schema.
+4. Define reusable components.
+5. Define design tokens.
+6. Define responsive behavior.
+
+Then implement the application.
+
+Do NOT create only a static mockup.
+
+Build functional:
+
+Search
+Filtering
+Sorting
+Navigation
+Bookmarks
+Authentication
+Submission
+Admin dashboard
+Database integration
+Verification status
+URL validation
+
+Use clean TypeScript.
+
+Avoid unnecessary dependencies.
+
+---
+
+# 44. FILE STRUCTURE
+
+Use a scalable structure similar to:
+
+app/
+page.tsx
+directory/
+category/
+website/
+search/
+submit/
+bookmarks/
+login/
+register/
+profile/
+settings/
+admin/
+
+components/
+layout/
+navigation/
+search/
+directory/
+website/
+categories/
+forms/
+ui/
+
+lib/
+db/
+auth/
+validation/
+search/
+utils/
+
+prisma/
+schema.prisma
+
+public/
+logos/
+icons/
+
+styles/
+globals.css
+
+---
+
+# 45. IMPORTANT FINAL INSTRUCTION
+
+Do not stop after creating the homepage.
+
+Build the COMPLETE product experience.
+
+Every route must have:
+
+* Real layout
+* Responsive design
+* Loading state
+* Empty state
+* Error state where appropriate
+* Functional interactions
+
+Prioritize:
+
+1. UX
+2. Visual quality
+3. Performance
+4. Accessibility
+5. Security
+6. Scalability
+7. Maintainability
+
+The final result should look like a real startup product that could be deployed publicly, not a generic AI-generated template.
+
+Create an exceptionally polished, original, premium website directory platform.

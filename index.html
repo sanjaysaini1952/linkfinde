@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LinkFinder is a curated directory of useful websites, tools and resources — with the real link, clearly labelled." />
+    <meta name="theme-color" content="#07090d" />
+    <title>LinkFinder — Explore the web, organized.</title>
+
+    <link rel="canonical" href="https://linkfinder.xyz/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LinkFinder" />
+    <meta property="og:url" content="https://linkfinder.xyz/" />
+    <meta property="og:title" content="LinkFinder — Explore the web, organized." />
+    <meta property="og:description" content="A curated directory of useful websites, tools and resources, with the real link clearly labelled." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LinkFinder — Explore the web, organized." />
+    <meta name="twitter:description" content="A curated directory of useful websites, tools and resources, with the real link clearly labelled." />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="LinkFinder home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>LINK<span class="brand-accent">FINDER</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#directory">Explore</a>
+        <a href="#directory">Categories</a>
+        <a href="#trending">Trending</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-search" data-action="focus-search">
+          <span aria-hidden="true">⌕</span><span>Search the index</span><kbd>⌘K</kbd>
+        </button>
+        <a class="submit-link" href="#submit">Submit <span aria-hidden="true">↗</span></a>
+        <button class="icon-button" data-action="bookmarks" aria-label="Bookmarks">♡</button>
+        <button class="icon-button" data-action="theme" aria-label="Toggle colour theme">◐</button>
+        <button class="avatar" data-action="profile" aria-label="Account">JD</button>
+        <button class="menu-button" data-action="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="app"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <div>
+            <a class="brand" href="#home">
+              <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>LINK<span class="brand-accent">FINDER</span></span>
+            </a>
+            <p class="footer-tag">Curated links. Independent directory.</p>
+            <a class="footer-domain" href="https://linkfinder.xyz/">linkfinder.xyz</a>
+          </div>
+          <div class="footer-columns">
+            <div>
+              <strong>Platform</strong>
+              <a href="#directory">Explore</a>
+              <a href="#trending">Trending</a>
+              <a href="#bookmarks">Bookmarks</a>
+            </div>
+            <div>
+              <strong>Categories</strong>
+              <a href="#category/AI%20%26%20Machine%20Learning">AI &amp; Machine Learning</a>
+              <a href="#category/Design">Design</a>
+              <a href="#category/Developer%20Tools">Developer Tools</a>
+              <a href="#category/Cybersecurity">Cybersecurity</a>
+            </div>
+            <div>
+              <strong>Contribute</strong>
+              <a href="#submit">Submit a website</a>
+              <a href="#directory">Browse all</a>
+              <a href="#admin">Admin overview</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 LinkFinder. All rights reserved.</span>
+          <span>Sample directory data · no affiliation with listed sites <b>✦</b></span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <button class="mobile-close" data-action="menu" aria-label="Close navigation">×</button>
+      <a href="#directory">Explore the directory</a>
+      <a href="#trending">Trending</a>
+      <a href="#bookmarks">Bookmarks</a>
+      <a href="#submit">Submit a website</a>
+      <a href="#admin">Admin overview</a>
+      <button class="outline-btn" data-action="theme">Toggle theme</button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
